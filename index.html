@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caliloops Graduation</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Elise+Fill&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section id="landing" class="page active">
+    <h1>Selamat Wisuda!</h1>
+    <p>Bikin kartu graduation atau twibbon versi kamu sendiri</p>
+    <button onclick="goTo('twibbon')">Buat Twibbon</button>
+    <button onclick="goTo('card')">Buat Graduation Card</button>
+  </section>
+
+  <section id="form-section" class="page">
+    <form id="gradForm">
+      <input type="text" name="nama" placeholder="Nama Lengkap" required />
+      <input type="text" name="fakultas" placeholder="Fakultas" />
+      <input type="text" name="jurusan" placeholder="Jurusan" />
+      <input type="text" name="kampus" placeholder="Kampus" />
+      <label>Upload Foto:</label>
+      <input type="file" name="foto" accept="image/png, image/jpeg" required />
+      <label>Pilih Dekorasi:</label>
+      <div id="dekorasi-options"></div>
+      <button type="submit">Generate Preview</button>
+    </form>
+  </section>
+
+  <section id="preview-section" class="page">
+    <h2>Preview Kartu Kamu</h2>
+    <canvas id="previewCanvas"></canvas>
+    <button onclick="downloadResult()">Download</button>
+    <button onclick="goTo('form')">Ulangi</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

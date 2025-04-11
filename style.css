@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fefefe;
+}
+.page {
+  display: none;
+  padding: 30px 20px;
+}
+.page.active {
+  display: block;
+}
+input, button {
+  padding: 12px;
+  margin: 8px 0;
+  width: 90%;
+  max-width: 400px;
+  font-size: 16px;
+}
+button {
+  background-color: #f9a8d4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+canvas {
+  max-width: 90%;
+  margin-top: 20px;
+}
